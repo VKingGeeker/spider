@@ -1,3 +1,4 @@
+import math
 import urllib.request
 from re import split
 
@@ -45,9 +46,11 @@ AirportSelector_nonExist_br = etree.HTML(
     # AirportSelector_exist_br.read()
 )
 
-page_li = AirportSelector_nonExist_br.xpath('/html/body/div[2]/div/div[2]/div/div[1]/div/div[2]/div/ul/li')
+# page_li = AirportSelector_nonExist_br.xpath('/html/body/div[2]/div/div[2]/div/div[1]/div/div[2]/div/ul/li')
+#
+# print(page_li[-1][0].text)
 
-print(page_li[-1][0].text)
+print(math.ceil(9 / 2))
 # airport_html = AirportSelector_nonExist_br.xpath(
 #     '/html/body/div[2]/div/div[2]/div/div[1]/div/div[1]/table/tbody/tr')
 #
